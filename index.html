@@ -49,16 +49,30 @@ h2 {
   padding:20px;
   border-radius:18px;
   text-align:center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255,255,255,0.1);
 }
 
 .image {
-  height:160px;
+  height:200px;
   background:#292929;
   border-radius:15px;
   display:flex;
   align-items:center;
   justify-content:center;
   color:#aaa;
+  overflow:hidden;
+  margin-bottom:15px;
+}
+
+.image img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
 .price {
@@ -74,6 +88,11 @@ button {
   border-radius:25px;
   cursor:pointer;
   margin-top:10px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background:#ddd;
 }
 
 a {
@@ -105,7 +124,7 @@ Premium finds. Quality products. Affordable prices.
 <div class="products">
 
 <div class="card">
-<div class="image">Beats</div>
+<div class="image"><img src="images/apple.jpg" alt="Beats"></div>
 <h3>Beats</h3>
 <p>Message for price</p>
 <a href="https://wa.me/14088057240"><button>Order Now</button></a>
@@ -113,7 +132,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
-<div class="image">Apple Products</div>
+<div class="image"><img src="images/apple.jpg" alt="Apple Products"></div>
 <h3>Apple Products</h3>
 <p>Message for price</p>
 <a href="https://wa.me/14088057240"><button>Order Now</button></a>
@@ -121,7 +140,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
-<div class="image">Apple Watch</div>
+<div class="image"><img src="images/apple-watch.jpg" alt="Apple Watch"></div>
 <h3>Apple Watch</h3>
 <p class="price">$40</p>
 <a href="https://wa.me/14088057240"><button>Order Now</button></a>
@@ -139,7 +158,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
-<div class="image">Hellstar Hoodie</div>
+<div class="image"><img src="images/hellstar.jpg" alt="Hellstar Hoodie"></div>
 <h3>Hellstar</h3>
 <p class="price">$25</p>
 <a href="https://wa.me/14088057240"><button>Order Now</button></a>
@@ -147,7 +166,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
-<div class="image">Yeezy Slides</div>
+<div class="image"><img src="images/yeezy.jpg" alt="Yeezy Slides"></div>
 <h3>Yeezy Slides</h3>
 <p class="price">$12</p>
 <a href="https://wa.me/14088057240"><button>Order Now</button></a>
@@ -155,7 +174,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
-<div class="image">Eric Emanuel</div>
+<div class="image"><img src="images/eric-emanuel.jpg" alt="Eric Emanuel"></div>
 <h3>Eric Emanuel</h3>
 <p class="price">$20</p>
 <a href="https://wa.me/14088057240"><button>Order Now</button></a>
@@ -163,7 +182,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
-<div class="image">Spider Hoodie</div>
+<div class="image"><img src="images/spider1.jpg" alt="Spider Hoodie"></div>
 <h3>Spider Hoodie</h3>
 <p class="price">$25</p>
 <a href="https://wa.me/14088057240"><button>Order Now</button></a>
@@ -171,7 +190,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
-<div class="image">Vetements</div>
+<div class="image"><img src="images/vetements.jpg" alt="Vetements"></div>
 <h3>Vetements</h3>
 <p class="price">$30</p>
 <a href="https://wa.me/14088057240"><button>Order Now</button></a>
@@ -179,7 +198,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
-<div class="image">Off White</div>
+<div class="image"><img src="images/offwhite.jpg" alt="Off White"></div>
 <h3>Off White</h3>
 <p class="price">$26</p>
 <a href="https://wa.me/14088057240"><button>Order Now</button></a>
@@ -187,7 +206,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
-<div class="image">Denim Tears</div>
+<div class="image"><img src="images/denim-tears.jpg" alt="Denim Tears"></div>
 <h3>Denim Tears</h3>
 <p class="price">$30</p>
 <a href="https://wa.me/14088057240"><button>Order Now</button></a>
@@ -195,7 +214,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
-<div class="image">North Face Puffer</div>
+<div class="image"><img src="images/northface.jpg" alt="North Face Puffer"></div>
 <h3>North Face Puffer</h3>
 <p class="price">$40</p>
 <a href="https://wa.me/14088057240"><button>Order Now</button></a>
@@ -203,7 +222,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
-<div class="image">Lululemon Set</div>
+<div class="image"><img src="images/lululemon.jpg" alt="Lululemon Set"></div>
 <h3>Lululemon Set</h3>
 <p class="price">$15</p>
 <a href="https://wa.me/14088057240"><button>Order Now</button></a>
@@ -211,7 +230,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
-<div class="image">Shoes</div>
+<div class="image"><img src="images/shoes.jpg" alt="Shoes"></div>
 <h3>Shoes</h3>
 <p>Depends on type</p>
 <a href="https://wa.me/14088057240"><button>Ask Price</button></a>
@@ -230,6 +249,7 @@ Premium finds. Quality products. Affordable prices.
 <div class="products">
 
 <div class="card">
+<div class="image"><img src="images/moncler.jpg" alt="Moncler"></div>
 <h3>Moncler</h3>
 <p>Ask on WhatsApp</p>
 <a href="https://wa.me/14088057240"><button>Ask Price</button></a>
@@ -237,6 +257,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
+<div class="image"><img src="images/amiri.jpg" alt="Amiri"></div>
 <h3>Amiri</h3>
 <p>Ask on WhatsApp</p>
 <a href="https://wa.me/14088057240"><button>Ask Price</button></a>
@@ -244,6 +265,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
+<div class="image"><img src="images/purple-jeans.jpg" alt="Purple Jeans"></div>
 <h3>Purple Jeans</h3>
 <p>Ask on WhatsApp</p>
 <a href="https://wa.me/14088057240"><button>Ask Price</button></a>
@@ -251,6 +273,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
+<div class="image"><img src="images/bape.jpg" alt="Bape"></div>
 <h3>Bape</h3>
 <p>Ask on WhatsApp</p>
 <a href="https://wa.me/14088057240"><button>Ask Price</button></a>
@@ -258,6 +281,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
+<div class="image"><img src="images/stanley.jpg" alt="Stanley Cups"></div>
 <h3>Stanley Cups</h3>
 <p>Ask for price</p>
 <a href="https://wa.me/14088057240"><button>Ask Price</button></a>
@@ -265,6 +289,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
+<div class="image"><img src="images/glasses.jpg" alt="Glasses"></div>
 <h3>Glasses</h3>
 <p>Ask for price</p>
 <a href="https://wa.me/14088057240"><button>Ask Price</button></a>
@@ -272,6 +297,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
+<div class="image"><img src="images/essentials.jpg" alt="Essentials"></div>
 <h3>Essentials</h3>
 <p>Ask for price</p>
 <a href="https://wa.me/14088057240"><button>Ask Price</button></a>
@@ -279,6 +305,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 <div class="card">
+<div class="image"><img src="images/designer-shoes.jpg" alt="Designer Shoes"></div>
 <h3>Designer Shoes</h3>
 <p>Ask for price</p>
 <a href="https://wa.me/14088057240"><button>Ask Price</button></a>
@@ -290,6 +317,7 @@ Premium finds. Quality products. Affordable prices.
 
 
 
+
 <section>
 
 <h2>✨ Other Items</h2>
@@ -297,11 +325,13 @@ Premium finds. Quality products. Affordable prices.
 <div class="products">
 
 <div class="card">
+<div class="image"><img src="images/fragrance.jpg" alt="Cologne / Fragrance"></div>
 <h3>Cologne / Fragrance</h3>
 <p>Depends</p>
 </div>
 
 <div class="card">
+<div class="image"><img src="images/spider2.jpg" alt="Moissanite Watches"></div>
 <h3>Moissanite Watches</h3>
 <p>Ask for price</p>
 </div>
